@@ -1,0 +1,14 @@
+- name: "Sai Sanjai"
+  dob: "23-06-1990"
+  mobile: 9444999444
+  addresses:
+  - flatnumber: 12
+    steet: "bohra layout"
+    city: Banaglore
+    type: permanent
+
+  - flatnumber: 13
+    steet: "bohra layout"
+    city: Banaglore
+    type: permanent
+  

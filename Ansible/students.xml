@@ -1,0 +1,8 @@
+    <student> 
+        <FirstName>Sai Sanjai</FirstName>
+        <DOB>23-june-1990</DOB>
+        <Email>v.sannjai@gmail.com</Email>
+        <address>
+            <Flatno>G-12</Flatno>
+        </address>
+    </student>
