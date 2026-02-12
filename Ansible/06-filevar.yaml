@@ -2,10 +2,10 @@
   hosts: local
   connection: local
   vars_files:
-    - variables.yaml"
+    - variables.yaml
   tasks:
   - name: "Print the variables"
     vars:
-      COURSE: "Ansible" 
+      COURSE: Ansible
     ansible.builtin.debug:
       msg: "Course is {{ COURSE }}, Trainer is: {{ TRAINER }}"
