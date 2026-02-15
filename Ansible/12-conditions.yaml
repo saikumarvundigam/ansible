@@ -1,0 +1,12 @@
+# Ansible code using conditions (when) to check if the task is required to run or not
+
+- name: demo on conditions
+  vars: local
+  connection: local
+- vars:
+  ISLIVE: false
+  tasks:
+  - name: check LIVE or NOT
+    ansible.builtin.debug:
+      msg: "Yes, It's Live"
+    when: IS_LIVE  
