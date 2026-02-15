@@ -2,7 +2,11 @@
   hosts: local
   connection: local
   tasks:
-    - name: command module test
-      #ansible.builtin.command: cat /etc/passwd | grep -i root
-      ansible.builtin.shell: cat /etc/passwd | grep -i root
-      register: users_output
+  - name: command module test
+    #ansible.builtin.command: cat /etc/passwd | grep -i root
+    ansible.builtin.shell: cat /etc/passwd | grep -i root
+    register: users_output
+
+  - name: print users output
+    ansible.builtin.debug:
+      msg: "Here is the output {{ users_output }}"
