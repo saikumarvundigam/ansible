@@ -1,0 +1,11 @@
+# check if the no. of sessions are more than 7
+- name: another dmeo on when conditions
+  hosts: local
+  connection: local
+  vars:
+    NUMBER_OF_SESSIONS: 7
+  tasks:
+  - name: check the sessions
+    ansible.builtin.debug:
+      msg: "Yes, Sessions are more than 5"
+    when: NUMBER_OF_SESSIONS > 5
