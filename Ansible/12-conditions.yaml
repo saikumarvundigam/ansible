@@ -9,4 +9,4 @@
   - name: check LIVE or NOT
     ansible.builtin.debug:
       msg: "Yes, It's Live"
-    when: IS_LIVE  
+    when: ISLIVE  
