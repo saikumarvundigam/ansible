@@ -3,7 +3,7 @@
 - name: demo on conditions
   hosts: local
   connection: local
-- vars:
+  vars:
   ISLIVE: false
   tasks:
   - name: check LIVE or NOT
