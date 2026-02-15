@@ -3,7 +3,7 @@
   connection: local
   vars:
     topics: linux, shell, ansible, terraform
-  tagslist:
+  tagsList:
     name: ansible
     project: roboshop
     component: catalogue
@@ -16,4 +16,4 @@
         msg: "{{  topics | split (',') }}"
     - name: convert map to list
       ansible.builtin.debug:
-        msg: "{{ tagslist | dict2iitems }}"
+        msg: "{{ tagsList | dict2iitems }}"
