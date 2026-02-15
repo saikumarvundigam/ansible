@@ -6,6 +6,6 @@
     ansible.builtin.debug:
       msg: "Print the Name of {{ item }}" # item is a reserved key
     loop:
-      - Mahavishnu
-      - Mahadeva
-      - Mahakali
+    - Mahavishnu
+    - Mahadeva
+    - Mahakali
