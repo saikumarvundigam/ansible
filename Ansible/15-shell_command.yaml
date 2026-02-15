@@ -9,4 +9,4 @@
 
   - name: print users output
     ansible.builtin.debug:
-      msg: "Here is the output {{ register }}"
+      msg: "Here is the output {{ users_output }}"
