@@ -3,17 +3,17 @@
   connection: local
   vars:
     topics: linux, shell, ansible, terraform
-  tagsList:
-    name: ansible
-    project: roboshop
-    component: catalogue
+    tagsList:
+      name: ansible
+      project: roboshop
+      component: catalogue
   tasks:
-    - name: greeting
-      ansible.builtin.debug:
-        msg: "Hi Sanju, {{ greeting | default (Good Morning) }}"
-    - name: convert string to list
-      ansible.builtin.debug:
-        msg: "{{  topics | split (',') }}"
-    - name: convert map to list
-      ansible.builtin.debug:
-        msg: "{{ tagsList | dict2iitems }}"
+  - name: greeting
+    ansible.builtin.debug:
+      msg: "Hi Sanju, {{ greeting | default (Good Morning) }}"
+  - name: convert string to list
+    ansible.builtin.debug:
+      msg: "{{  topics | split (',') }}"
+  - name: convert map to list
+    ansible.builtin.debug:
+       msg: "{{ tagsList | dict2iitems }}"
