@@ -1,7 +1,7 @@
 # Ansible code using conditions (when) to check if the task is required to run or not
 
 - name: demo on conditions
-  vars: local
+  hosts: local
   connection: local
 - vars:
   ISLIVE: false
